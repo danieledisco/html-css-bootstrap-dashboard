@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>html-css-bootstrap-dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
   <body>
 
         <!-- #region header -->
@@ -49,7 +50,236 @@
         <main id="main_site">
                 <div class="container">
                         <h1>Catalogo libri</h1>
+                        <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                        <thead>
+                                                <tr>
+                                                        <th scope="col">Titolo</th>
+                                                       <!--  <th scope="col" class="d-none d-md-block">Data prestito</th>  -->
+                                                        <!-- di default (cellulare) è nascosto. Da md (tablet) in poi appare
+                                                             E' stata usata la stessa espressione usata poi nella cella -->
+                                                       <th scope="col" class="d-none d-md-table-cell text-nowrap">Data prestito</th>
+                                                        <th scope="col">Stato</th>
+                                                        <th scope="col">Azioni</th>                                                       
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr class="">
+                                                        <td scope="row">I pilastri della terra</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">I promessi sposi</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Il signore degli anelli</td>
+                                                        <td class="d-none d-md-table-cell">18/10/2023</td>
+                                                        <td>
+                                                                <span class="badge bg-warning">In prestito</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Harry Potter e la pietra filosofale</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Il codice Da Vinci</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-danger">Non disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Shining</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">La divina commedia</td>
+                                                        <td class="d-none d-md-table-cell">21/09/2023</td>
+                                                        <td>
+                                                                <span class="badge bg-warning">In prestito</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Il trono di spade</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                 
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Il mondo di Sofia</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-danger">Non disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <div class="action d-flex">
+                                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                                        <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                                        <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                                </button>                         
+                                                                        </div>        
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                                        <td class="d-none d-md-table-cell">25/07/2023</td>
+                                                        <td>
+                                                                <span class="badge bg-warning">In prestito</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">Il piccolo principe</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                                <tr class="">
+                                                        <td scope="row">La storia infinita</td>
+                                                        <td class="d-none d-md-table-cell">-</td>
+                                                        <td>
+                                                                <span class="badge bg-success">Disponibile</span> 
+                                                        </td>
+                                                        <td>
+                                                                <div class="action d-flex">
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil fa-sm fa-fw"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash-can fa-sm fa-fw"></i>
+                                                                        </button>                         
+                                                                </div>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                        
+                        
+
                 </div>
+
+        
+                
 
         </main>
         <!-- #endregion main -->
